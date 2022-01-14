@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      type="text/javascript"
-      src="https://codesandbox.io/public/sse-hooks/sse-hooks.f648b14c15c640a14a557113a991cb8d.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://codesandbox.io/static/js/banner.be879265d.js"
-    ></script>
-    <script src="https://kit.fontawesome.com/e041a58bd8.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Katya Komisarova portfolio</title>
+    <meta
+      name="description"
+      content="Kateryna is a front-end engineer based in London."
+    />
+    <title>Front-end developer - Patricia Pereira</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -35,34 +32,70 @@
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
     ></script>
-    
-    
-    
   </head>
   <body>
-     <div class="hero">
-      <p>👋 Hello, I am</p>
-      <h1>Kateryna Komisarova</h1>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Kateryna Logo"
+          />
+          <img
+            src="images/logo-small.jpg"
+            class="logo d-block d-md-none"
+            alt="Kateryna Logo"
+          />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Kateryna"> About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Kateryna's work"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Kateryna"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <p>👋 Hello, I'm</p>
+      <h1>Kateryna Komisarova</h1> 
       <h2 class="mb-5">Front-end developer based in England</h2>
       <div>
-        <a href="#" class="btn btn-branding">Contact me</a>
+        <a href="/contact.html" class="btn btn-branding" title="Contact me"
+          >Contact me</a
+        >
       </div>
     </div>
     <p class="text-center m-5">
-      Featured Project which my best projects be choice to show
+      Check out some of my featured projects below
+
     </p>
     <div class="container">
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="images/yogurt.png" class="img-fluid" alt="" />
+          <img
+            src="images/yogurt.png"
+            class="img-fluid"
+            alt="Yogurt project preview"
+          />
         </div>
         <div class="col">
           <div class="project-desciption">
-            <h2 class="mb-5">Yogurt Project</h2>
+            <h2 class="mb-5">Yogurt Landing Page </h2>
             <p class="mb-5 text-muted">
-              Yogurt is basically fermented milk—milk that's heated and mixed with two types of live bacteria, Lactobacillus bulgaricus and Streptococcus thermophilus. This is good bacteria, by the way, the probiotic kind that keeps our gut healthy.
+              I entered the world of front-end development by gaining some knowledge in HTML, CSS, and JavaScript. I used my knowledge of these languages, along with my new skills in VS Code, to build a landing page about Yogurt. The page utilizes JavaScript functions to create user interaction. 
             </p>
-            <a href="" class="btn btn-branding-outline"> Learn more </a>
+            <a href="/work.html" class="btn btn-branding-outline">
+              Learn more
+            </a>
           </div>
         </div>
       </div>
@@ -71,30 +104,99 @@
           <div class="project-desciption">
             <h2 class="mb-5">Weather App</h2>
             <p class="mb-5 text-muted">
-              Weather is the state of the atmosphere, describing for example the degree to which it is hot or cold, wet or dry, calm or stormy, clear or cloudy. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere.
+              I built a Vanilla JavaScript weather app in SheCodes Plus, an advanced 8-week JavaScript coding workshop. Building upon my previously-gained knowledge, I also became skilled in Bootstrap, API’s, real-life development workflow, hosting, and advanced JavaScript. I combined all of these skills to create a fully-functioning weather app. 
             </p>
-            <a href="" class="btn btn-branding-outline"> Learn more </a>
+            <a href="/work.html" class="btn btn-branding-outline">
+              Learn more
+            </a>
           </div>
         </div>
         <div class="col d-none d-lg-block">
-          <img src="images/weather.png" class="img-fluid" alt="" />
+          <img
+            src="images/weather.png"
+            class="img-fluid"
+            alt="Weather project preview"
+          />
         </div>
       </div>
       <div class="row">
         <div class="col d-none d-lg-block">
-          <img src="images/dictionary.png" class="img-fluid" alt="" />
+          <img
+            src="images/dictionary.png"
+            class="img-fluid"
+            alt="Dictionary app preview"
+          />
         </div>
         <div class="col">
           <div class="project-desciption">
             <h2 class="mb-5">Dictionary App</h2>
             <p class="mb-5 text-muted">
-              Of the approximately 1 million words in the English language, the average English speaker knows 60,000 of those words. Besides helping with spelling and word meanings, being able to use a dictionary effectively and regularly is a perfect way to improve your English language skills through the dictionary's range of other helpful information on everyday language usage and grammar.
+              I immersed myself in React development in SheCodes React. I used my knowledge of this highly-demanded framework to build a working dictionary app incorporating coding best practices, along with the most popular tools and technologies.
             </p>
-            <a href="" class="btn btn-branding-outline"> Learn more </a>
+            <a href="/work.html" class="btn btn-branding-outline">
+              Learn more
+            </a>
           </div>
         </div>
       </div>
-    </div>
+      <footer>
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Patricia"
+            >
+              Contact me
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:komisssarova.uk@gmail.com"
+            class="email-link"
+            title="Email Kateryna"
+          >
+            komisssarova.uk@gmail.com
+          </a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://github.com/komisssarova"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/komisssarova/"
+            target="_blank"
+            title="instragram Profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kateryna-komisarova/"
+            target="_blank"
+            title="LinkedIn Profile"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          ✌️ This website was coded by Kateryna Komisarova, and is
+          <a
+            href="https://github.com/matthieua/portfolio-project"
+            target="_blank"
+          >
+            open-sourced
+          </a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
